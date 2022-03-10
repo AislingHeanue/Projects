@@ -3,8 +3,6 @@ from copy import deepcopy
 import pygame
 import random
 import time
-import os
-os.environ['SDL_VIDEODRIVER']="doof"
 
 class Pixel:
     def __init__(self,state):
@@ -150,7 +148,8 @@ def Game(path="",padding = 10):
                         playarea[y][x].birth()
                     else:
                         playarea[y][x].deader()       #add 1 to how long dead
-#Game()
-Game("/mnt/d/coding/Life Files/orion.cells.txt",80)
+Game()
+#Game("D:\\Coding\\Life Files\\orion.cells.txt",20)
+
 
 
